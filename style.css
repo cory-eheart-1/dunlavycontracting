@@ -1,0 +1,129 @@
+html {
+    width:100%;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-decoration: none;
+    color: #2b3278;
+    font-size: 170%;
+    font-weight: normal;
+}
+
+section {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 15px;
+}
+
+ul {
+    font-size: 15px;
+}
+
+button {
+    background-color: #2b3278;
+    color: white;
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: -2% 0;
+}
+
+.navigation > img {
+    width: 30%;
+    scale: 60%;
+    margin-right: -5%;
+    margin-left: -10%;
+}
+
+.navigation > h1 {
+    color: black;
+}
+
+.navigation > a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation > a:hover {
+    text-decoration: underline;
+    font-size: 130%;
+    transition: all .15s ease-in-out;
+}
+
+.image_banner {
+    background: url("meat-processing.jpg");
+    background-size: 120%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_banner  > p{
+    height: auto;
+    width: 50%;
+    margin: auto;
+    padding: 5% 10%;
+    background-color: #222252;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.about {
+    display: flex;
+    margin-top: 5%;
+}
+
+.about > img {
+    flex-basis: 60%;
+    width: 40%;
+    height: auto;
+    scale: 95%;
+    object-fit: cover;
+}
+
+.about > div {
+    flex-basis: 60%;
+    padding: 2% 5%;
+}
+
+.help_you {
+    text-align: center;
+}
+
+.help_you > div {
+    display: flex;
+}
+
+.help_you > div > div {
+    flex-basis: 100%;
+}
+
+.help_you > div > div + div {
+    margin-left: 5%;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media (max-width: 1350px) {
+    section {
+        width: 95%;
+    }
+}
