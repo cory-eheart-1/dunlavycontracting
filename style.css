@@ -12,6 +12,10 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
 }
 
+body {
+    margin-bottom: 60px;
+}
+
 section {
     width: 1250px;
     margin: 0 auto;
@@ -56,6 +60,7 @@ button {
 .navigation > a {
     text-decoration: none;
     color: black;
+    transition: all .15s ease-in-out;
 }
 
 .navigation > a:hover {
@@ -66,7 +71,8 @@ button {
 
 .image_banner {
     background: url("meat-processing.jpg");
-    background-size: 120%;
+    background-size: 140%;
+    background-repeat: no-repeat;
     height: 550px;
     display: flex;
     justify-content: center;
@@ -120,6 +126,10 @@ button {
 
 .footer {
     text-align: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -40px;
+    margin-top: 20px;
 }
 
 @media (max-width: 1350px) {
