@@ -8,12 +8,22 @@ html {
 h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
     color: #2b3278;
-    font-size: 170%;
     font-weight: normal;
 }
 
+h3 {
+    font-size: 170%;
+}
+
+h4 > sup {
+    color: red;
+}
+
 body {
-    margin-bottom: 60px;
+    position: relative;
+    min-height: 90vh;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 section {
@@ -40,17 +50,17 @@ button {
 }
 
 .navigation {
+    top: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: -2% 0;
+    margin-bottom: 20px;
+    padding-top: 1%;
 }
 
 .navigation > img {
     width: 30%;
     scale: 60%;
-    margin-right: -5%;
-    margin-left: -10%;
 }
 
 .navigation > h1 {
@@ -124,12 +134,73 @@ button {
     margin-left: 5%;
 }
 
+.two_fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two_fields > div {
+    width: 50%;
+}
+
+.two_fields > div > input {
+    width: 90%;
+    height: 30px;
+    background: snow;
+    border: 1px solid grey;
+ }
+
+ .two_fields > div > input:focus {
+    background: white;
+}
+
+.one_field > input { 
+    width: 95%;
+    height: 30px;
+    background: snow;
+    border: 1px solid grey;
+}
+
+.one_field > input:focus {
+    background: white;
+}
+
+.multi_select > label {
+    font-size: 15px;
+}
+
+.body_field > textarea {
+    resize: none;
+    width: 95%;
+    height: 200px;
+    background: snow;
+    border: 1px solid grey;
+}
+
+.body_field > textarea:focus {
+    background: white;
+}
+
+.submit {
+    background-color: #2b3278;
+    color: white;
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
 .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     text-align: center;
-    text-align: center;
+    color: white;
     width: 100%;
-    margin-bottom: -40px;
-    margin-top: 20px;
+    margin-bottom: -100px;
+    padding: 5px 0;
+    background:#222252
 }
 
 @media (max-width: 1350px) {
